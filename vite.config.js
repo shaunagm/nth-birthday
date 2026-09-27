@@ -6,4 +6,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig(({ command }) => ({
   plugins: [vue()],
   base: command === 'build' ? '/nth-birthday/' : '/',
+  test: {
+    environment: 'node',
+  },
 }))
